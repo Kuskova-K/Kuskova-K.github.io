@@ -1,0 +1,244 @@
+
+body {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  background-color: #f8f8f8;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul {
+  list-style: none;
+}
+h1 {
+    width: auto;
+    margin: 0 auto 8px;
+    font-family: "Georgia";
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 64px;
+    color: black;
+    background-color: #8790b1e3;
+}
+
+h2 {
+    width: auto;
+    margin: 0 auto 15px;
+    font-family: "Georgia";
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    background-color: #eaeaea;
+    color: black;
+}
+
+.menu-list {
+    width: auto;
+    margin: 0 auto 15px;
+    font-family: "Georgia";
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: normal;
+    background-color: #b6b4c966;
+}
+
+.feature-desc{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height:16px;
+    text-align: center;
+}
+
+.site-footer{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height:16px;
+}
+.ingredients-list{
+    color: #484343;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height:24px;
+}
+
+.characteristic-list{
+    list-style: none;
+    color: #939bb9;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 21px;
+    list-style-image: url(img/pawprint.png);
+}
+
+.contact-list{
+    list-style: none;
+    color: #939bb9;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 21px;
+    list-style-image: url(img/pawprint.png);
+}
+
+.feeding{
+    color: #939bb9;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 21px;
+    text-align: center;
+}
+
+.picture_style{
+    border: 4px solid #939bb9;
+}
+
+.pic{
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 76vh;
+}
+
+.open-popup {
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background: #8790b1e3;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup__bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #8790b1e3;
+}
+
+.popup input:focus + .label__text {
+    color: #8790b1e3;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #8790b1e3;
+}
+
+.popup textarea:focus + .label__text {
+    color: #8790b1e3;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #8790b1e3;
+    background: #8790b1e3;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.popup button:hover {
+    background: #fff;
+    color:#8790b1e3;
+    transition: 0.5s all;
+}
